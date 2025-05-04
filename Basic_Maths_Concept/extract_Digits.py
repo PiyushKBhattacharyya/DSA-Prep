@@ -3,7 +3,7 @@ def extract_digit(n):
     while n > 0:
         ld = n % 10
         digits.append(ld)
-        n = n // 10
+        n //= 10
     
     print(f"The digits of the number {n} are {digits[::-1]}")
     
